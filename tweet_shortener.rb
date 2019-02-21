@@ -21,5 +21,5 @@ def word_substituter(message)
       word = dictionary[word]
     end
   end
-  message_array.join(" ")
+  message = message_array.join(" ")
 end
