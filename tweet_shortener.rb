@@ -20,5 +20,6 @@ def word_substituter(message)
     if dictionary.has_key?(word)
       word = dictionary[word]
     end
-    message_array.join(" ")
   end
+  message_array.join(" ")
+end
