@@ -13,3 +13,12 @@ def dictionary
       'and' => '&'
   }
 end
+
+def word_substituter(message)
+  message_array = message.split(" ")
+  message_array.each do |word|
+    if dictionary.has_key?(word)
+      word = dictionary[word]
+    end
+    message_array.join(" ")
+  end
